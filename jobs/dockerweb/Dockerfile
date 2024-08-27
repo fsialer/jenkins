@@ -14,7 +14,7 @@
 #         && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
 #         && apt-get install vim -y
 
-FROM php:7.4-fpm
+FROM php:7.4-apache
 LABEL maintainer="Jaivic"
 
 RUN a2enmod rewrite
